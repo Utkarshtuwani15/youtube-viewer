@@ -13,9 +13,9 @@ RUN apk add --no-cache \
       npm \
       tor
 
-ENV PUPPETEER_SKIP_CHROMIUM_DOWNLOAD true
-ENV NODE_ENV production
-ENV YOUTUBE_VIEWER_FORCE_DEBUG false
+ENV APP_MODE=production
+ENV PORT=8080
+ENV MESSAGE=Hello
 
 # Create app directory
 WORKDIR /app
